@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shuddle/static/css/main.b1c46bae.css",
+    "main.js": "/shuddle/static/js/main.bf88fe81.js",
+    "static/media/spaceship.jpg": "/shuddle/static/media/spaceship.cf9d591968b452c0aa8b.jpg",
+    "static/media/stargate.jpg": "/shuddle/static/media/stargate.8500816c6f42614d79d5.jpg",
+    "static/media/aliensky.jpg": "/shuddle/static/media/aliensky.8770264734c02e8e525c.jpg",
+    "static/media/ringplanet.jpg": "/shuddle/static/media/ringplanet.4a26f2b16efe50c188b2.jpg",
+    "static/media/heroplanet.jpg": "/shuddle/static/media/heroplanet.387077c68ff307e66e97.jpg",
+    "static/media/proxima.png": "/shuddle/static/media/proxima.588a5082eb3d710ef054.png",
+    "static/media/kepler.png": "/shuddle/static/media/kepler.f6cfc95cd31acaff9d7b.png",
+    "static/media/mars.png": "/shuddle/static/media/mars.26814482ba218796f166.png",
+    "static/media/MapView.svg": "/shuddle/static/media/MapView.e0cae8d4a322b2d9878e07b2b9098f3a.svg",
+    "static/media/shuddle.logo.midnight.svg": "/shuddle/static/media/shuddle.logo.midnight.f0fb9175836359c9b5025fc01328c1b3.svg",
+    "static/media/shuddle.logoWordmark.svg": "/shuddle/static/media/shuddle.logoWordmark.d9110798ad5b1c2a4f25c30be39b947f.svg",
+    "static/media/shuddle.logoRide.svg": "/shuddle/static/media/shuddle.logoRide.a9ce0894edd851fed8daed4265f07886.svg",
+    "static/media/shuddle.logoVisit.svg": "/shuddle/static/media/shuddle.logoVisit.4b703eb16dd347e280b00d31fc0aa3a2.svg",
+    "static/media/kl.svg": "/shuddle/static/media/kl.f00a798b09acdb624d8d2cc2dce65ed2.svg",
+    "index.html": "/shuddle/index.html",
+    "main.b1c46bae.css.map": "/shuddle/static/css/main.b1c46bae.css.map",
+    "main.bf88fe81.js.map": "/shuddle/static/js/main.bf88fe81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1c46bae.css",
+    "static/js/main.bf88fe81.js"
+  ]
+}
