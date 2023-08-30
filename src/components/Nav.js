@@ -21,9 +21,8 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 import { BiHomeAlt2, BiPlanet, BiTrip, BiMenu } from "react-icons/bi";
-import logo from "../img/shuddle.logo.midnight.svg";
 
-export default function Nav() {
+export default function Nav(props) {
   const toast = useToast();
   const showToast = () => {
     toast({
@@ -58,8 +57,8 @@ export default function Nav() {
       <Flex alignItems="center" w="80rem" gap="1rem">
         <NavLink to="/">
           <Image
-            src={logo}
-            alt="Shuddle Logo"
+            src={props.logo}
+            alt={props.logoAltText}
             h={{
               base: "1.5rem",
               sm: "2rem",

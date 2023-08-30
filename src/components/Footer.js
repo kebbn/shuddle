@@ -7,11 +7,9 @@ import {
   Divider,
   Image,
 } from "@chakra-ui/react";
-import wordmark from "../img/shuddle.logoWordmark.svg";
-import kl from "../img/kl.svg";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <Center
       w="calc(100vw - (100vw-100%))"
@@ -22,7 +20,7 @@ export default function Footer() {
     >
       <Stack gap="1.5rem" w="80rem" mt="3.5rem">
         <Flex alignItems="top" w="100%" flexWrap="wrap" gap="2rem">
-          <Image src={wordmark} alt="Shuddle Logo" h="2rem"></Image>
+          <Image src={props.logo} alt={props.logoAltText} h="2rem"></Image>
           <Spacer flex="1 2" />
           <Flex gap="1.5rem" flexWrap="wrap" minW="50%">
             <Stack
@@ -92,8 +90,12 @@ export default function Footer() {
             }}
           />
           <Flex>
-            <Link to="https://kevliu.me" target="_blank">
-              <Image src={kl} alt="KL" h="1.5rem"></Image>
+            <Link to={props.signatureHref} target="_blank">
+              <Image
+                src={props.signature}
+                alt={props.signatureAltText}
+                h="1.5rem"
+              ></Image>
             </Link>
           </Flex>
         </Flex>

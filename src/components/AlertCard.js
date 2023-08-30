@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Text,
-  Stack,
-  Card,
-  Tag,
-  Divider,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Flex, Text, Stack, Card, Tag, Divider } from "@chakra-ui/react";
 
 export default function AlertCard(props) {
   return (

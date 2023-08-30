@@ -9,8 +9,6 @@ import {
   forwardRef,
   Tag,
   SimpleGrid,
-  useToast,
-  Center,
 } from "@chakra-ui/react";
 
 const WayfinderCard = forwardRef((props, ref) => (

@@ -9,11 +9,15 @@ import RideContent from "./RideContent";
 import Footer from "./components/Footer";
 import Wayfinder from "./components/WayfinderTheme";
 
+import logo from "./img/shuddle.logo.midnight.svg";
+import wordmark from "./img/shuddle.logoWordmark.svg";
+import kl from "./img/kl.svg";
+
 function App() {
   return (
     <ChakraProvider theme={Wayfinder}>
       <Flex direction="column" minH="100vh">
-        <Nav />
+        <Nav logo={logo} logoAltText="Shuddle Logo" />
         <AnimatePresence>
           <Routes>
             <Route path="/" element={<InfoContent />} />
@@ -22,7 +26,13 @@ function App() {
           </Routes>
         </AnimatePresence>
 
-        <Footer />
+        <Footer
+          logo={wordmark}
+          logoAltText="Shuddle Wordmark"
+          signature={kl}
+          signatureAltText="KL"
+          signatureHref="https://kevliu.me"
+        />
       </Flex>
     </ChakraProvider>
   );

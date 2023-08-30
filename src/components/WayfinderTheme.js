@@ -1,7 +1,6 @@
 import { extendTheme, defineStyleConfig } from "@chakra-ui/react";
 import { createMultiStyleConfigHelpers } from "@chakra-ui/styled-system";
 import { mode } from "@chakra-ui/theme-tools";
-import { transform } from "framer-motion";
 
 const tagHelpers = createMultiStyleConfigHelpers(["container", "label"]);
 const inputHelpers = createMultiStyleConfigHelpers(["field"]);
