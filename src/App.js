@@ -1,12 +1,11 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { ChakraProvider, Flex } from "@chakra-ui/react";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import InfoContent from "./InfoContent";
 import VisitContent from "./VisitContent";
 import RideContent from "./RideContent";
-import Footer from "./components/Footer";
 import Wayfinder from "./components/WayfinderTheme";
 
 import logo from "./img/shuddle.logo.midnight.svg";
@@ -16,7 +15,11 @@ import kl from "./img/kl.svg";
 function App() {
   return (
     <ChakraProvider theme={Wayfinder}>
-      <Flex direction="column" minH="100vh">
+      <Flex
+        direction="column"
+        minH="100vh"
+        backgroundImage="linear-gradient(to bottom, #F0CF6522 0%, white 50%)"
+      >
         <Nav logo={logo} logoAltText="Shuddle Logo" />
         <AnimatePresence>
           <Routes>

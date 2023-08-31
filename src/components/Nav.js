@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import {
   Flex,
   Spacer,
-  Text,
   Center,
   Button,
   ButtonGroup,
@@ -15,9 +14,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
 import { BiHomeAlt2, BiPlanet, BiTrip, BiMenu } from "react-icons/bi";

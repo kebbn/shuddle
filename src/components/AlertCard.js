@@ -34,7 +34,7 @@ export default function AlertCard(props) {
               <Text fontFamily="mono" fontWeight="bold" color="amethyst">
                 {props.entry1}
               </Text>
-              <Tag variant={props.entry1tagvariant}>{props.entry1tag}</Tag>
+              <Tag variant={props.entry1TagVariant}>{props.entry1Tag}</Tag>
             </Flex>
             <Flex
               gap="0.5rem"
@@ -44,7 +44,7 @@ export default function AlertCard(props) {
               <Text fontFamily="mono" fontWeight="bold" color="amethyst">
                 {props.entry2}
               </Text>
-              <Tag variant={props.entry2tagvariant}>{props.entry2tag}</Tag>
+              <Tag variant={props.entry2TagVariant}>{props.entry2Tag}</Tag>
             </Flex>
             <Flex
               gap="0.5rem"
@@ -54,7 +54,7 @@ export default function AlertCard(props) {
               <Text fontFamily="mono" fontWeight="bold" color="amethyst">
                 {props.entry3}
               </Text>
-              <Tag variant={props.entry3tagvariant}>{props.entry3tag}</Tag>
+              <Tag variant={props.entry3TagVariant}>{props.entry3Tag}</Tag>
             </Flex>
           </Stack>
         </Flex>

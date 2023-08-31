@@ -5,14 +5,8 @@ import {
   Spacer,
   Text,
   Center,
-  Button,
   SimpleGrid,
   Stack,
-  Card,
-  CardBody,
-  Heading,
-  Tag,
-  Image,
   useToast,
 } from "@chakra-ui/react";
 
@@ -67,17 +61,17 @@ export default function VisitContent() {
             h="24rem"
             contentWidth="28rem"
             tag="Interstellar Travel"
-            logosrc={visit}
-            logoheight="6.5rem"
+            logoSrc={visit}
+            logoH={{ base: "5rem", sm: "6.5rem" }}
             description="Venture beyond the boundaries of Earth’s Solar System and
             explore our Milky Way galaxy"
           />
 
           <TravelSearch
-            systemsearch={0}
-            defaultdeparture="Earth USCA003 - Vandenberg Space Force Base"
-            defaultarrival="Proxima Centauri b - Alpha Station"
-            defaultdeparturewindow="Jan 01 2123"
+            hasSystemSearch={false}
+            defaultDeparture="Earth USCA003 - Vandenberg Space Force Base"
+            defaultArrival="Proxima Centauri b - Alpha Station"
+            defaultDepartureWindow="Jan 01 2123"
             onClick={showToast}
           />
 
@@ -96,7 +90,7 @@ export default function VisitContent() {
               travelColor="white"
               travelBg="midnight"
               travelBorderRadius="0.5rem"
-              buttononClick={showToast}
+              buttonOnClick={showToast}
               divider2={false}
               divider3={false}
               duration="2d3h21m"
@@ -105,8 +99,8 @@ export default function VisitContent() {
               arriveLocation="Proxima B Alpha"
               departTime="Jan 01 2123 16:15"
               arriveTime="32.58 107AD"
-              tagvariant="warning"
-              tagcontent="In 1 Day"
+              tagVariant="warning"
+              tagContent="In 1 Day"
               showGraphControls={false}
               infoPriceRange="$15k - $22k"
               infoMissionNumber="Pb0382"
@@ -121,7 +115,7 @@ export default function VisitContent() {
               travelColor="white"
               travelBg="midnight"
               travelBorderRadius="0.5rem"
-              buttononClick={showToast}
+              buttonOnClick={showToast}
               divider2={false}
               divider3={false}
               duration="2d3h21m"
@@ -130,8 +124,8 @@ export default function VisitContent() {
               arriveLocation="Proxima B Alpha"
               departTime="Jan 31 2123 16:15"
               arriveTime="32.63 107AD"
-              tagvariant="neutral"
-              tagcontent="In 32 Days"
+              tagVariant="neutral"
+              tagContent="In 32 Days"
               showGraphControls={false}
               infoPriceRange="$15k - $22k"
               infoMissionNumber="Pb0382"
@@ -146,7 +140,7 @@ export default function VisitContent() {
               travelColor="white"
               travelBg="midnight"
               travelBorderRadius="0.5rem"
-              buttononClick={showToast}
+              buttonOnClick={showToast}
               divider2={false}
               divider3={false}
               duration="2d8h00m"
@@ -155,8 +149,8 @@ export default function VisitContent() {
               arriveLocation="Proxima B Alpha"
               departTime="Jan 15 2123 16:15"
               arriveTime="32.60 107AD"
-              tagvariant="neutral"
-              tagcontent="In 16 Days"
+              tagVariant="neutral"
+              tagContent="In 16 Days"
               showGraphControls={false}
               infoPriceRange="$18k - $28k"
               infoMissionNumber="GX181"
@@ -171,7 +165,7 @@ export default function VisitContent() {
               travelColor="white"
               travelBg="midnight"
               travelBorderRadius="0.5rem"
-              buttononClick={showToast}
+              buttonOnClick={showToast}
               divider2={true}
               divider3={false}
               duration="3d0h15m + 3d2h"
@@ -180,8 +174,8 @@ export default function VisitContent() {
               arriveLocation="Proxima B Alpha"
               departTime="Jan 05 2123 06:20"
               arriveTime="32.60 107AD"
-              tagvariant="neutral"
-              tagcontent="In 6 Days"
+              tagVariant="neutral"
+              tagContent="In 6 Days"
               showGraphControls={false}
               infoPriceRange="$12k - $20k"
               infoMissionNumber="US105"
@@ -196,7 +190,7 @@ export default function VisitContent() {
               travelColor="white"
               travelBg="midnight"
               travelBorderRadius="0.5rem"
-              buttononClick={showToast}
+              buttonOnClick={showToast}
               divider2={true}
               divider3={true}
               duration="3d0h15m + 5d2h"
@@ -205,8 +199,8 @@ export default function VisitContent() {
               arriveLocation="Proxima B Alpha"
               departTime="Jan 03 2123 21:00"
               arriveTime="32.61 107AD"
-              tagvariant="neutral"
-              tagcontent="In 4 Days"
+              tagVariant="neutral"
+              tagContent="In 4 Days"
               showGraphControls={false}
               infoPriceRange="$12k - $20k"
               infoMissionNumber="GX089"
@@ -225,11 +219,11 @@ export default function VisitContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={mars}
-              imgalt="Mars"
-              tagcontent="Trending Planet"
-              cardbodytitle="Mars"
-              cardbodycontent="Discover our closest neighbor and the home of interplanetary exploration."
+              imgSrc={mars}
+              imgAltText="Mars"
+              tagContent="Trending Planet"
+              cardBodyTitle="Mars"
+              cardBodyContent="Discover our closest neighbor and the home of interplanetary exploration."
               onClick={showToast}
             />
             <WayfinderCard
@@ -237,11 +231,11 @@ export default function VisitContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={proxima}
-              imgalt="Proxima Centauri b"
-              tagcontent="Spacegate Destination"
-              cardbodytitle="Proxima Centauri b"
-              cardbodycontent="Our closest exoplanet located in Alpha Centauri."
+              imgSrc={proxima}
+              imgAltText="Proxima Centauri b"
+              tagContent="Spacegate Destination"
+              cardBodyTitle="Proxima Centauri b"
+              cardBodyContent="Our closest exoplanet located in Alpha Centauri."
               onClick={showToast}
             />
             <WayfinderCard
@@ -249,11 +243,11 @@ export default function VisitContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={kepler}
-              imgalt="Kepler-186f"
-              tagcontent="Frontier Exploration"
-              cardbodytitle="Kepler-186f"
-              cardbodycontent="Growing interest and funding for this promising exoplanet."
+              imgSrc={kepler}
+              imgAltText="Kepler-186f"
+              tagContent="Frontier Exploration"
+              cardBodyTitle="Kepler-186f"
+              cardBodyContent="Growing interest and funding for this promising exoplanet."
               onClick={showToast}
             />
           </SimpleGrid>

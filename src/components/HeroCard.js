@@ -29,14 +29,14 @@ export default function HeroCard(props) {
             {props.tag}
           </Tag>
           <Image
-            src={props.logosrc}
-            h={props.logosrcheight}
+            src={props.logoSrc}
+            h={props.logoH}
             p="1rem 0"
-            display={props.logosrc ? "flex" : "none"}
+            display={props.logoSrc ? "flex" : "none"}
           />
           <Text
             color="white"
-            fontSize={props.descriptionfontsize || { base: "xl", sm: "2xl" }}
+            fontSize={props.descriptionFontSize || { base: "xl", sm: "2xl" }}
             display={props.description ? "flex" : "none"}
           >
             {props.description}

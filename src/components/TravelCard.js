@@ -194,22 +194,22 @@ function TravelGraph(props) {
         display={props.showGraphControls ? "flex" : "none"}
       >
         <Tag
-          variant={props.tagvariant}
-          display={props.tagcontent ? "flex" : "none"}
+          variant={props.tagVariant}
+          display={props.tagContent ? "flex" : "none"}
         >
-          {props.tagcontent}
+          {props.tagContent}
         </Tag>
         <Spacer />
         <Flex gap="1rem" flexWrap="wrap">
           <Button
             variant="flushed"
             color="amethyst"
-            onClick={props.buttononClick}
+            onClick={props.buttonOnClick}
           >
             View Details
           </Button>
           <Spacer />
-          <Button bgColor="apricot" onClick={props.buttononClick}>
+          <Button bgColor="apricot" onClick={props.buttonOnClick}>
             Select Trip
           </Button>
         </Flex>
@@ -346,10 +346,10 @@ function TravelBookingInfo(props) {
         flexWrap="wrap"
       >
         <Tag
-          variant={props.tagvariant}
-          display={props.tagcontent ? "flex" : "none"}
+          variant={props.tagVariant}
+          display={props.tagContent ? "flex" : "none"}
         >
-          {props.tagcontent}
+          {props.tagContent}
         </Tag>
         <Spacer
           display={{
@@ -361,11 +361,11 @@ function TravelBookingInfo(props) {
           <Button
             variant="flushed"
             color="amethyst"
-            onClick={props.buttononClick}
+            onClick={props.buttonOnClick}
           >
             View Details
           </Button>
-          <Button bgColor="apricot" onClick={props.buttononClick}>
+          <Button bgColor="apricot" onClick={props.buttonOnClick}>
             Select Trip
           </Button>
         </Flex>

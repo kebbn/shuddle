@@ -1,6 +1,5 @@
 import { extendTheme, defineStyleConfig } from "@chakra-ui/react";
 import { createMultiStyleConfigHelpers } from "@chakra-ui/styled-system";
-import { mode } from "@chakra-ui/theme-tools";
 
 const tagHelpers = createMultiStyleConfigHelpers(["container", "label"]);
 const inputHelpers = createMultiStyleConfigHelpers(["field"]);
@@ -332,19 +331,6 @@ const fonts = {
   },
 };
 
-const config = {
-  styles: {
-    global: (props) => ({
-      body: {
-        bg: mode(
-          "linear-gradient(to bottom, #F0CF6522 0%, white 50%)",
-          "midnight"
-        )(props),
-      },
-    }),
-  },
-};
-
 const components = {
   components: {
     Button,
@@ -358,5 +344,5 @@ const components = {
   },
 };
 
-const theme = extendTheme(colors, fonts, components, config);
+const theme = extendTheme(colors, fonts, components);
 export default theme;

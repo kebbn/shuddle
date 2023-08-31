@@ -2,16 +2,12 @@ import { motion } from "framer-motion";
 
 import {
   Flex,
-  Spacer,
-  Text,
   Center,
   Button,
   SimpleGrid,
   Stack,
   Card,
-  CardBody,
   Heading,
-  Tag,
   Image,
   Divider,
   useToast,
@@ -68,16 +64,16 @@ export default function RideContent() {
             h="24rem"
             contentWidth="28rem"
             tag="Solar System Transit"
-            logosrc={ride}
-            logoheight="6.5rem"
+            logoSrc={ride}
+            logoH={{ base: "5rem", sm: "6.5rem" }}
             description="Visit planets and other celestial objects with our FTL network"
           />
 
           <TravelSearch
-            systemsearch={1}
-            defaultdeparture="Earth USCA003 - Vandenberg Space Force Base"
-            defaultarrival="Mars Gamma Station"
-            defaultdeparturewindow="Jan 01 2123"
+            hasSystemSearch={true}
+            defaultDeparture="Earth USCA003 - Vandenberg Space Force Base"
+            defaultArrival="Mars Gamma Station"
+            defaultDepartureWindow="Jan 01 2123"
             onClick={showToast}
           />
 
@@ -90,7 +86,7 @@ export default function RideContent() {
               <Stack spacing="0">
                 <TravelGraph
                   travelColor="darkGray"
-                  buttononClick={showToast}
+                  buttonOnClick={showToast}
                   divider2={true}
                   divider3={false}
                   duration="16h22m"
@@ -99,13 +95,13 @@ export default function RideContent() {
                   arriveLocation="Mars Gamma"
                   departTime="Jan 01 2123 16:15"
                   arriveTime="22:13 MTC MSD 100996"
-                  tagvariant="warning"
-                  tagcontent="In 1 Day"
+                  tagVariant="warning"
+                  tagContent="In 1 Day"
                   showGraphControls={true}
                 />
                 <TravelGraph
                   travelColor="darkGray"
-                  buttononClick={showToast}
+                  buttonOnClick={showToast}
                   divider2={true}
                   divider3={true}
                   duration="18h55m"
@@ -114,13 +110,13 @@ export default function RideContent() {
                   arriveLocation="Mars Gamma"
                   departTime="Jan 02 2123 16:15"
                   arriveTime="22:13 MTC MSD 100997"
-                  tagvariant="neutral"
-                  tagcontent="In 2 Days"
+                  tagVariant="neutral"
+                  tagContent="In 2 Days"
                   showGraphControls={true}
                 />
                 <TravelGraph
                   travelColor="darkGray"
-                  buttononClick={showToast}
+                  buttonOnClick={showToast}
                   divider2={true}
                   divider3={true}
                   duration="18h55m"
@@ -129,8 +125,8 @@ export default function RideContent() {
                   arriveLocation="Mars Gamma"
                   departTime="Jan 03 2123 16:15"
                   arriveTime="22:13 MTC MSD 100998"
-                  tagvariant="neutral"
-                  tagcontent="In 3 Days"
+                  tagVariant="neutral"
+                  tagContent="In 3 Days"
                   showGraphControls={true}
                 />
               </Stack>
@@ -200,36 +196,36 @@ export default function RideContent() {
                 <AlertCard
                   title="Rail Lines"
                   entry1="RL330"
-                  entry1tagvariant="warning"
-                  entry1tag="Queue Delay"
+                  entry1TagVariant="warning"
+                  entry1Tag="Queue Delay"
                   entry2="RL226"
-                  entry2tagvariant="error"
-                  entry2tag="Recalibrating"
+                  entry2TagVariant="error"
+                  entry2Tag="Recalibrating"
                   entry3="RL321"
-                  entry3tagvariant="neutral"
-                  entry3tag="Reduced Capacity"
+                  entry3TagVariant="neutral"
+                  entry3Tag="Reduced Capacity"
                 />
                 <AlertCard
                   title="Ship Networks"
                   entry1="Thames"
-                  entry1tagvariant="error"
-                  entry1tag="Rerouted"
+                  entry1TagVariant="error"
+                  entry1Tag="Rerouted"
                   entry2="Yamuna"
-                  entry2tagvariant="neutral"
-                  entry2tag="At Capacity"
+                  entry2TagVariant="neutral"
+                  entry2Tag="At Capacity"
                   entry3="Nile"
-                  entry3tagvariant="warning"
-                  entry3tag="Delays"
+                  entry3TagVariant="warning"
+                  entry3Tag="Delays"
                 />
 
                 <AlertCard
                   title="Stations"
                   entry1="Rainier"
-                  entry1tagvariant="warning"
-                  entry1tag="Delays"
+                  entry1TagVariant="warning"
+                  entry1Tag="Delays"
                   entry2="Matterhorn"
-                  entry2tagvariant="neutral"
-                  entry2tag="At Capacity"
+                  entry2TagVariant="neutral"
+                  entry2Tag="At Capacity"
                 />
               </Stack>
             </Card>
@@ -243,48 +239,48 @@ export default function RideContent() {
                 variant="button"
                 direction="row"
                 minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-                cardbodytitlesize={{
+                cardBodyTitleSize={{
                   base: "xl",
                   sm: "2xl",
                 }}
-                cardbodytitle="Planned Service Changes"
-                cardbodycontent="Check for planned closures and service changes"
+                cardBodyTitle="Planned Service Changes"
+                cardBodyContent="Check for planned closures and service changes"
                 onClick={showToast}
               />
               <WayfinderCard
                 variant="button"
                 direction="row"
                 minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-                cardbodytitlesize={{
+                cardBodyTitleSize={{
                   base: "xl",
                   sm: "2xl",
                 }}
-                cardbodytitle="Book or Manage Trip"
-                cardbodycontent="Check status or make changes to accommodations"
+                cardBodyTitle="Book or Manage Trip"
+                cardBodyContent="Check status or make changes to accommodations"
                 onClick={showToast}
               />
               <WayfinderCard
                 variant="button"
                 direction="row"
                 minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-                cardbodytitlesize={{
+                cardBodyTitleSize={{
                   base: "xl",
                   sm: "2xl",
                 }}
-                cardbodytitle="Solar System Travel Policies"
-                cardbodycontent="Find out how to best prepare for travel to other systems"
+                cardBodyTitle="Solar System Travel Policies"
+                cardBodyContent="Find out how to best prepare for travel to other systems"
                 onClick={showToast}
               />
               <WayfinderCard
                 variant="button"
                 direction="row"
                 minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-                cardbodytitlesize={{
+                cardBodyTitleSize={{
                   base: "xl",
                   sm: "2xl",
                 }}
-                cardbodytitle="Contact Spaceship Control"
-                cardbodycontent="Reach out to connect with our travel specialists"
+                cardBodyTitle="Contact Spaceship Control"
+                cardBodyContent="Reach out to connect with our travel specialists"
                 onClick={showToast}
               />
             </SimpleGrid>
@@ -305,52 +301,52 @@ export default function RideContent() {
               variant="button"
               direction="row"
               minH="17.5rem"
-              tagcontent="Service Update"
-              cardbodytitlesize={{
+              tagContent="Service Update"
+              cardBodyTitleSize={{
                 base: "xl",
                 sm: "2xl",
               }}
-              cardbodytitle="Rail service changes: 2124"
-              cardbodycontent="Oct 3, 2123"
+              cardBodyTitle="Rail service changes: 2124"
+              cardBodyContent="Oct 3, 2123"
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH="17.5rem"
-              tagcontent="Feature"
-              cardbodytitlesize={{
+              tagContent="Feature"
+              cardBodyTitleSize={{
                 base: "xl",
                 sm: "2xl",
               }}
-              cardbodytitle="Shuddle Ride app beta launch"
-              cardbodycontent="Oct 1, 2123"
+              cardBodyTitle="Shuddle Ride app beta launch"
+              cardBodyContent="Oct 1, 2123"
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH="17.5rem"
-              tagcontent="Service Update"
-              cardbodytitlesize={{
+              tagContent="Service Update"
+              cardBodyTitleSize={{
                 base: "xl",
                 sm: "2xl",
               }}
-              cardbodytitle="Shuddle adds service for customers heading to Moon Alpha"
-              cardbodycontent="Sept 10, 2123"
+              cardBodyTitle="Shuddle adds service for customers heading to Moon Alpha"
+              cardBodyContent="Sept 10, 2123"
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH="17.5rem"
-              tagcontent="Feature"
-              cardbodytitlesize={{
+              tagContent="Feature"
+              cardBodyTitleSize={{
                 base: "xl",
                 sm: "2xl",
               }}
-              cardbodytitle="New payment options on Shuddle Ride starts next year"
-              cardbodycontent="Sep 1, 2123"
+              cardBodyTitle="New payment options on Shuddle Ride starts next year"
+              cardBodyContent="Sep 1, 2123"
               onClick={showToast}
             />
           </SimpleGrid>

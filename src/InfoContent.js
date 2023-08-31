@@ -66,7 +66,7 @@ export default function InfoContent() {
             h={{ base: "24rem", sm: "40rem" }}
             contentWidth="36rem"
             tag="Welcome to Shuddle"
-            descriptionfontsize={{ base: "4xl", sm: "6xl" }}
+            descriptionFontSize={{ base: "4xl", sm: "6xl" }}
             description="Explore the Beyond of tomorrow today."
           />
 
@@ -74,15 +74,15 @@ export default function InfoContent() {
             direction="row"
             columns={{ base: "1", md: "2" }}
             w="100%"
-            imgsrc={aliensky}
-            imgalt="Alien Planet Vista"
-            cardbodypadding={{ base: "1.5rem", md: "3rem" }}
-            cardbodytitle="Interplanetary Travel"
-            cardbodycontent="With our advancements in Stargate and wormhole traversal technology,
+            imgSrc={aliensky}
+            imgAltText="Alien Planet Vista"
+            cardBodyPadding={{ base: "1.5rem", md: "3rem" }}
+            cardBodyTitle="Interplanetary Travel"
+            cardBodyContent="With our advancements in Stargate and wormhole traversal technology,
           Shuddle has since become the premier provider of spacecraft travel
           and space mission execution planning."
-            buttoncontent="About Shuddle"
-            buttononClick={showToast}
+            buttonContent="About Shuddle"
+            buttonOnClick={showToast}
           />
 
           <Flex alignItems="center" flexWrap="wrap" gap="1.5rem">
@@ -105,11 +105,11 @@ export default function InfoContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={mars}
-              imgalt="Mars"
-              tagcontent="Trending Planet"
-              cardbodytitle="Mars"
-              cardbodycontent="Discover our closest neighbor and the home of interplanetary exploration."
+              imgSrc={mars}
+              imgAltText="Mars"
+              tagContent="Trending Planet"
+              cardBodyTitle="Mars"
+              cardBodyContent="Discover our closest neighbor and the home of interplanetary exploration."
               onClick={showToast}
             />
             <WayfinderCard
@@ -117,11 +117,11 @@ export default function InfoContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={proxima}
-              imgalt="Proxima Centauri b"
-              tagcontent="Spacegate Destination"
-              cardbodytitle="Proxima Centauri b"
-              cardbodycontent="Our closest exoplanet located in Alpha Centauri."
+              imgSrc={proxima}
+              imgAlt="Proxima Centauri b"
+              tagContent="Spacegate Destination"
+              cardBodyTitle="Proxima Centauri b"
+              cardBodyContent="Our closest exoplanet located in Alpha Centauri."
               onClick={showToast}
             />
             <WayfinderCard
@@ -129,11 +129,11 @@ export default function InfoContent() {
               direction="column"
               minH={{ base: "15rem", sm: "20rem", md: "30rem" }}
               w="100%"
-              imgsrc={kepler}
-              imgalt="Kepler-186f"
-              tagcontent="Frontier Exploration"
-              cardbodytitle="Kepler-186f"
-              cardbodycontent="Growing interest and funding for this promising exoplanet."
+              imgSrc={kepler}
+              imgAlt="Kepler-186f"
+              tagContent="Frontier Exploration"
+              cardBodyTitle="Kepler-186f"
+              cardBodyContent="Growing interest and funding for this promising exoplanet."
               onClick={showToast}
             />
           </SimpleGrid>
@@ -142,13 +142,13 @@ export default function InfoContent() {
             direction="row"
             columns={{ base: "1", md: "2" }}
             w="100%"
-            imgsrc={spaceship}
-            imgalt="Alien Planet Vista"
-            cardbodypadding={{ base: "1.5rem", md: "3rem" }}
-            cardbodytitle="Technology & Innovation"
-            cardbodycontent="Discover the groundbreaking technologies that Shuddle uses to make interplanetary travel possible, such as Ion Propulsion, Autonomous Spacecraft, and the Stargate system."
-            buttoncontent="Shuddle Technologies"
-            buttononClick={showToast}
+            imgSrc={spaceship}
+            imgAlt="Alien Planet Vista"
+            cardBodyPadding={{ base: "1.5rem", md: "3rem" }}
+            cardBodyTitle="Technology & Innovation"
+            cardBodyContent="Discover the groundbreaking technologies that Shuddle uses to make interplanetary travel possible, such as Ion Propulsion, Autonomous Spacecraft, and the Stargate system."
+            buttonContent="Shuddle Technologies"
+            buttonOnClick={showToast}
           />
 
           <SimpleGrid
@@ -160,36 +160,36 @@ export default function InfoContent() {
               variant="button"
               direction="row"
               minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-              cardbodytitlesize="2xl"
-              cardbodytitle="Glossary"
-              cardbodycontent="Understand key terms and concepts related to interplanetary travel."
+              cardBodyTitleSize="2xl"
+              cardBodyTitle="Glossary"
+              cardBodyContent="Understand key terms and concepts related to interplanetary travel."
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-              cardbodytitlesize="2xl"
-              cardbodytitle="Timeline"
-              cardbodycontent="Explore a timeline of major milestones in interplanetary exploration."
+              cardBodyTitleSize="2xl"
+              cardBodyTitle="Timeline"
+              cardBodyContent="Explore a timeline of major milestones in interplanetary exploration."
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-              cardbodytitlesize="2xl"
-              cardbodytitle="Media Gallery"
-              cardbodycontent="View stunning image and video content captured throughout the galaxy."
+              cardBodyTitleSize="2xl"
+              cardBodyTitle="Media Gallery"
+              cardBodyContent="View stunning image and video content captured throughout the galaxy."
               onClick={showToast}
             />
             <WayfinderCard
               variant="button"
               direction="row"
               minH={{ base: "10rem", sm: "12.5rem", md: "15rem" }}
-              cardbodytitlesize="2xl"
-              cardbodytitle="Browse All Topics"
-              cardbodycontent="Access a curated list of articles, websites, and books for deeper exploration."
+              cardBodyTitleSize="2xl"
+              cardBodyTitle="Browse All Topics"
+              cardBodyContent="Access a curated list of articles, websites, and books for deeper exploration."
               onClick={showToast}
             />
           </SimpleGrid>
