@@ -15,7 +15,7 @@ Wayfinder is the name given to the design system that houses all of the design a
 Notable highlights include:
 
 - Installation instructions and dependencies
-- Foundatational guidelines like branding, colours, typography, and Icons
+- Foundational guidelines like branding, colours, typography, and Icons
 - Component design and code snippets for:
   - (L1) components like buttons and input fields
   - (L2) components like Cards and Navbars
@@ -25,11 +25,11 @@ Notable highlights include:
 
 The custom components and theming codebase for Shuddle is deployed as a sharable npm package for all to use or modify. For more information, please visit the [Wayfinder Documentation > Getting Started](https://zeroheight.com/05d10a12e/p/8072fb-getting-started) section.
 
-### 🎨 [Shuddle Figma designs](https://www.figma.com/file/i68jLTY22BfAU2q7VA35dZ/IPTS-%2F-Shuddle-%2F-Wayfinder?type=design&node-id=1050%3A2318&mode=design&t=EOthpVqdMKSqB0I2-1)
+### 🎨 [Shuddle Figma designs](https://www.figma.com/file/i68jLTY22BfAU2q7VA35dZ/Shuddle-App-%26-Wayfinder-Design-System?type=design&node-id=1079%3A28838&mode=design&t=IRZJ7pkLUCGNbaxe-1)
 
 The original concept and high fidelity designs for Shuddle were created in Figma. The link also contains UI Kit components for use by designers, and additional designs for the "legacy" IPTS (Interplanetary Travel Syndicate) screens that the Shuddle screens are based from.
 
-### 📄 Case study (TBD)
+### 📄 [Case study](https://dribbble.com/shots/22450574-Wayfinder-Design-System)
 
 A case study article I published on Dribbble showing the highlights of this project and the work involved.
 
