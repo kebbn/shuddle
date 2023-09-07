@@ -374,4 +374,4 @@ function TravelBookingInfo(props) {
   );
 }
 
-export { TravelCard, TravelGraph };
+export { TravelCard, TravelGraph, TravelBookingInfo };
