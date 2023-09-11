@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/shuddle/static/js/main.6d437575.js",
+    "main.js": "/shuddle/static/js/main.3533152c.js",
     "static/media/spaceship.jpg": "/shuddle/static/media/spaceship.cf9d591968b452c0aa8b.jpg",
     "static/media/stargate.jpg": "/shuddle/static/media/stargate.8500816c6f42614d79d5.jpg",
     "static/media/aliensky.jpg": "/shuddle/static/media/aliensky.8770264734c02e8e525c.jpg",
@@ -16,9 +16,9 @@
     "static/media/shuddle.logoVisit.svg": "/shuddle/static/media/shuddle.logoVisit.4b703eb16dd347e280b00d31fc0aa3a2.svg",
     "static/media/kl.svg": "/shuddle/static/media/kl.f00a798b09acdb624d8d2cc2dce65ed2.svg",
     "index.html": "/shuddle/index.html",
-    "main.6d437575.js.map": "/shuddle/static/js/main.6d437575.js.map"
+    "main.3533152c.js.map": "/shuddle/static/js/main.3533152c.js.map"
   },
   "entrypoints": [
-    "static/js/main.6d437575.js"
+    "static/js/main.3533152c.js"
   ]
 }
