@@ -34,7 +34,7 @@ function App() {
           logoAltText="Shuddle Wordmark"
           signature={kl}
           signatureAltText="KL"
-          signatureHref="https://kevliu.me"
+          signatureHref="https://github.com/kebbn/shuddle"
         />
       </Flex>
     </ChakraProvider>
